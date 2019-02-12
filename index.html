@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="UTF-8">
+        <title>Lab 2</title>
+	      <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+
+  <script src="myscript.js"></script>
+
+  <main class="container">
+  			<header>
+  				<h2 id="place"></h2>
+          <section class="button"><button type="button" onclick="openPrompt()">Change Area</button><section>
+        </header>
+          <section id="weather">
+          </section>
+          <aside class="tempSec">
+            <h1 id="temp"></h1>
+            <section>
+              <!-- from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch -->
+              <label class="switch">
+                <input type="checkbox" id="degcheckbox" onclick="onDegClick()">
+                <span class="slider round"></span>
+              </label>
+            </section>
+          </aside>
+          <section class="det">
+            <h4 id="humidity"></h4>
+            <h4 id="wind"></h4>
+          </section>
+        </header>
+        <section id="hourlyforecast">
+        </section>
+        <section id="dailyforecast">
+        </section>
+	</main>
+
+  <script>fillPage();</script>
+</body>
